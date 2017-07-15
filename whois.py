@@ -25,6 +25,6 @@ for d in domain:
 res = open("whois.json", 'w')
 
 for i in range(0, len(data)):
-    res.write(json.dumps(data[i], default=json_fallback))
+    res.write(json.dumps(data[i], indent=4, default=json_fallback))
 
 res.close()
